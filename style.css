@@ -16,9 +16,8 @@ a {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  max-width: 1700px;
+  max-width: 1680px;
   margin: 0 auto;
-  padding: 0 10px;
   margin-top: 39px;
   height: 45px;
   border: 1px solid black;
@@ -37,4 +36,35 @@ a {
 
 .nav_link{
   margin: 0 0 0 71px;
+}
+
+.header_profile{
+  max-width:186px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_profile span{
+  margin-left: 10px;
+  margin-right: 26px;
+  display: inline-block;
+  width: 101px;
+  white-space: nowrap;
+}
+
+.main{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1680px;
+  margin: 0 auto;
+  margin-top: 37px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.hero_banner{
+  max-width: 1680px;
 }
