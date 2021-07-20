@@ -1,43 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="./css/style.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Travel</title>
   </head>
   <body>
-    
     <header class="header">
-      <div class="header_logo">
-        <a class="logo_link" href="#">
-          <img src="images/logo.svg" alt="Logo">
-        </a>
-      </div>
-      <div class="header_navbar">
-        <nav class="navbar">
-              <a class="nav_link" href="#">Destination</a>
-              <a class="nav_link" href="#">Offer</a>
-              <a class="nav_link" href="#">Tour</a>
-              <a class="nav_link" href="#">Blog</a>
-          </ul>
-        </nav>
-      </div>
-      <div class="header_profile">
-          <img src="images/user.svg" alt="profile">
-          <span>My Account</span>
-          <img src="images/serch.svg" alt="search">
+      <div class="wrapper">
+        <div class="header__wrapper">
+          <div class="header__logo">
+            <a href="/" class="header__logo-link">
+              <img
+                src="./img/svg/logo.svg"
+                alt="Company`s logo"
+                class="header__logo-pic"
+              />
+            </a>
+          </div>
+
+          <nav class="header__nav">
+            <ul class="header__list">
+              <li class="header__item">
+                <a href="#!" class="header__link">Destination</a>
+              </li>
+              <li class="header__item">
+                <a href="#!" class="header__link">Offer</a>
+              </li>
+              <li class="header__item">
+                <a href="#!" class="header__link">Tour</a>
+              </li>
+              <li class="header__item">
+                <a href="#!" class="header__link">Blog</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="header__login">
+            <a href="#!" class="header__link header__profile">
+              <img
+                src="./img/svg/user.svg"
+                alt="Profile"
+                class="header__profile-img"
+              />
+              <span class="header__myacc">My Account</span>
+            </a>
+          </div>
+        </div>
       </div>
     </header>
+
     <main class="main">
-        <div>
-          <img class="hero_banner" src="images/Union.png" alt="hero-banner">
+      <section class="intro">
+        <div class="wrapper">
+          <h1 class="intro__title">It’s Time To Explore The World</h1>
+          <a href="#!" class="intro__link">Plain Your Trip</a>
+
+          <form  class="order__form">
+            <fieldset class="order__form-wrap">
+              
+            </fieldset>
+          </form>
         </div>
+      </section>
     </main>
   </body>
 </html>
