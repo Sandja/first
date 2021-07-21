@@ -56,15 +56,37 @@
       <section class="intro">
         <div class="wrapper">
           <h1 class="intro__title">It’s Time To Explore The World</h1>
-          <a href="#!" class="intro__link">Plain Your Trip</a>
+          <a href="#!" class="intro__button">Plain Your Trip</a>
 
-          <form  class="order__form">
-            <fieldset class="order__form-wrap">
-              
-            </fieldset>
+          <form class="order__form">
+            <div class="order__form-wrap">
+              <label for="destination">Destinations</label>
+              <select
+                class="order__destination order__item"
+                name="destination"
+                id="destination"
+              >
+                <option value="arab">Arab Egypt</option>
+                <option value="japan">Japan</option>
+                <option value="china">China</option>
+                <option value="cuba">Cuba</option>
+              </select>
+            </div>
+            <div class="order__form-wrap">
+              <label for="date">Check In</label>
+              <input
+                class="order__date order__item"
+                type="date"
+                name="date"
+                id="date"
+              />
+            </div>
+            <input class="order__submit" type="submit" value="Discover Now" />
           </form>
         </div>
       </section>
+
+      <section class="stages"></section>
     </main>
   </body>
 </html>

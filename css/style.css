@@ -557,6 +557,7 @@ body {
   margin-top: 135px;
   padding-top: 285px;
   padding-left: 255px;
+  margin-bottom:214px ;
 }
 
 .intro__title {
@@ -567,11 +568,86 @@ body {
   margin-bottom: 50px;
 }
 
-.intro__link{
+.intro__button {
   text-decoration: none;
   color: #fff;
-  background: #FF715B;
+  background: #ff715b;
   width: 200px;
-height: 60px;
-padding: 18px 37px;
+  height: 60px;
+  padding: 18px 37px;
+}
+
+.intro__button:hover{
+  background-color: #c73c27;
+}
+
+.order__form {
+  margin-top: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 950px;
+  height: 150px;
+}
+
+.order__form-wrap {
+  display: flex;
+  flex-direction: column;
+  padding: 49px 29px 43px 89px;
+}
+
+.order__item {
+  font-family: "Noto Serif";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  margin-top: 10px;
+  width: 250px;
+  color: #ff715b;
+  border: 0;
+  border-bottom: 1px solid #f5ebe9;
+  padding-bottom: 15px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.order__destination {
+  background: transparent url(../img/svg/downarrow.svg) no-repeat right center;
+}
+
+.order__date {
+  background: transparent url(../img/svg/calender.svg) no-repeat right 6px;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+
+.order__form-wrap label {
+  font-family: "Product Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: #a79997;
+  padding-left: 2px;
+}
+
+.order__submit {
+  width: 200px;
+  height: 65px;
+  align-self: center;
+  margin-left: 10px;
+  font-family: "Noto Serif";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #fff;
+  background-color: #FF715B;
+  border:0;
+}
+
+.order__submit:hover{
+  background-color: #f1533b;
 }
