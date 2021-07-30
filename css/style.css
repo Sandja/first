@@ -553,9 +553,9 @@ body {
 }
 
 .intro {
-  height: 100vh;
+  min-height: 1031px;
   background: url(../img/png/Union.png) no-repeat center;
-  background-size: cover;
+  background-size: 1920px 1031px;
   margin-top: 135px;
   padding-top: 285px;
   margin-bottom: 214px;
@@ -655,7 +655,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .stages {
   max-width: 1410px;
-  height: 325px;
+  min-height: 325px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
