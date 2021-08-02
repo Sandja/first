@@ -509,6 +509,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 100;
 }
 
 .wrapper {
@@ -700,6 +701,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   margin-top: 20px;
 }
 
+.topdest {
+  margin-bottom: 192px;
+}
+
 .topdest__descr {
   display: inline-block;
   max-width: 441px;
@@ -777,8 +782,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   filter: brightness(80%);
 }
 
-.topdest {
-  margin-bottom: 192px;
+.offer {
+  margin-bottom: 169px;
 }
 
 .offer__wrapper {
@@ -893,12 +898,12 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   margin-bottom: 104px;
 }
 
-.offer__subtitle:nth-of-type(2)::before{
+.offer__subtitle:nth-of-type(2)::before {
   content: "";
   position: absolute;
   width: 54px;
   height: 49px;
-  background: #EDFAE3;
+  background: #edfae3;
   border-radius: 10px;
   top: -7px;
   left: -11px;
@@ -906,30 +911,39 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .offer__subtitle:last-of-type {
-  background: transparent url(../img/svg/headphones.svg) no-repeat 2px 6px; 
+  background: transparent url(../img/svg/headphones.svg) no-repeat 2px 6px;
 }
 
-
-.offer__subtitle:last-of-type::before{
+.offer__subtitle:last-of-type::before {
   content: "";
   position: absolute;
   width: 54px;
   height: 49px;
-  background: #FFF8E3;
+  background: #fff8e3;
   border-radius: 10px;
   top: -7px;
   left: -11px;
   z-index: -1;
 }
 
-
 .offer__text {
   padding-left: 97px;
-  font-family: 'Product Sans';
+  font-family: "Product Sans";
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
   line-height: 26px;
   color: #a79997;
   margin-bottom: 89px;
+}
+
+.destin__wrapper {
+}
+
+.destin__title {
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 65px;
+  text-align: center;
+  margin-bottom: 100px;
 }
