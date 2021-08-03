@@ -447,10 +447,8 @@ textarea {
   font-family: "Noto Serif";
   font-style: normal;
   font-weight: 400;
-  src: local(""),
-    url("../fonts/noto-serif-v11-latin-regular.woff2") format("woff2"),
-    /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url("../fonts/noto-serif-v11-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local(""), url("../fonts/noto-serif-v11-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */ url("../fonts/noto-serif-v11-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* noto-serif-700 - latin */
 @font-face {
@@ -458,8 +456,7 @@ textarea {
   font-style: normal;
   font-weight: 700;
   src: local(""), url("../fonts/noto-serif-v11-latin-700.woff2") format("woff2"),
-    /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url("../fonts/noto-serif-v11-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    /* Chrome 26+, Opera 23+, Firefox 39+ */ url("../fonts/noto-serif-v11-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /*product-sans-regular  */
@@ -468,10 +465,8 @@ textarea {
   font-family: "Product Sans";
   font-style: normal;
   font-weight: 400;
-  src: local("Product-Regular"), local("Product Regular"),
-    url("../fonts/ProductSans-Regular.woff2") format("woff2"),
-    /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url("../fonts/ProductSans-Regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local("Product-Regular"), local("Product Regular"), url("../fonts/ProductSans-Regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */ url("../fonts/ProductSans-Regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /*product-sans-700*/
@@ -479,10 +474,8 @@ textarea {
   font-family: "Product Sans";
   font-style: normal;
   font-weight: 700;
-  src: local("Product-Bold"), local("Product-Bold"),
-    url("../fonts/ProductSans-Bold.woff2") format("woff2"),
-    /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url("../fonts/ProductSans-Bold.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local("Product-Bold"), local("Product-Bold"), url("../fonts/ProductSans-Bold.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */ url("../fonts/ProductSans-Bold.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 html {
@@ -938,6 +931,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .destin__wrapper {
+  max-width: 1410px;
+  margin: 0 auto;
 }
 
 .destin__title {
@@ -946,4 +941,80 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   line-height: 65px;
   text-align: center;
   margin-bottom: 100px;
+}
+
+.destin__rating-area {
+  overflow: hidden;
+  width: 80px;
+}
+.destin__rating-area:not(:checked) > input {
+  display: none;
+}
+.destin__rating-area:not(:checked) > label {
+  float: right;
+  width: 14px;
+  padding: 0;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 14px;
+  color: lightgrey;
+}
+.destin__rating-area:not(:checked) > label:before {
+  content: "★";
+}
+.destin__rating-area > input:checked ~ label,
+.destin__rating-area:not(:checked) > label:hover,
+.destin__rating-area:not(:checked) > label:hover ~ label,
+.destin__rating-area > input:checked + label:hover {
+  color: gold;
+}
+.destin__rate-area > label:active {
+  position: relative;
+}
+
+.destin__card-title {
+  width: 400px;
+  height: 105px;
+  position: relative;
+  bottom: 53px;
+  right: -50px;
+  background: #fff;
+  z-index: 2;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.destin__cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  min-height: 737px;
+  align-items: flex-end;
+}
+
+.destin__card:nth-child(2) {
+  align-self: flex-start;
+}
+
+.destin__subtitle {
+  font-weight: bold;
+font-size: 24px;
+line-height: 33px;
+color: #000000;
+  margin-left: 34px;
+  padding-top: 20px;
+}
+
+.destin__elem {
+  display: inline-block;
+}
+
+.destin__price {
+  margin-left: 34px;
+  margin-top: 11px;
+  font-family: "Product Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ff715b;
 }
