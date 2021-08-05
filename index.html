@@ -122,7 +122,7 @@
         </div>
       </section>
 
-      <section class="offer">
+      <section class="offer" id="offer">
         <div class="wrapper">
           <div class="offer__wrapper">
             <div class="offer__illustration">
@@ -150,7 +150,7 @@
         </div>
       </section>
 
-      <section class="destin">
+      <section class="destin" id="destin">
         <div class="wrapper">
           <div class="destin__wrapper">
             <h2 class="destin__title">Choose Your Destination</h2>
@@ -225,40 +225,85 @@
       <section class="review">
         <div class="review__wrapper">
           <h2 class="review__title">What Our Happy Customers Say About Us</h2>
-          <div class="review__slider">
-            <input type="radio" name="point" id="review__slide1" checked />
-            <input type="radio" name="point" id="review__slide2" />
-            <input type="radio" name="point" id="review__slide3" />
-            <input type="radio" name="point" id="review__slide4" />
-            <div class="slider">
-              <div class="slides slide1">
-                <div class="review__comment">
-                  <div class="review__client">
-                    <img src="./img/png/client.png" alt="client" class="review__img" />
-                    <div class="review__client-container">
-                      <h6 class="review__name">Md Shamim Hossain</h6>
-                      <span class="review__prof">UI/UX Designer</span>
-                    </div>
-                  </div>
-                  <p class="review__content">
-                    Jetrips Hotel is an excellent choice for anybody for considering hosting their events there. Top levela facilities and excellent
-                    staff make for a brilliantad environment within which to operate. The hotel is meticulous in its planning.
-                  </p>
-                </div>
+          <div class="review__comment">
+            <div class="review__client">
+              <img src="./img/png/client.png" alt="client" class="review__img" />
+              <div class="review__client-container">
+                <h6 class="review__name">Md Shamim Hossain</h6>
+                <span class="review__prof">UI/UX Designer</span>
               </div>
-              <div class="slides slide2"></div>
-              <div class="slides slide3"></div>
-              <div class="slides slide4"></div>
             </div>
-            <div class="controls">
-              <label for="review__slide1"></label>
-              <label for="review__slide2"></label>
-              <label for="review__slide3"></label>
-              <label for="review__slide4"></label>
+            <p class="review__content">
+              Jetrips Hotel is an excellent choice for anybody for considering hosting their events there. Top levela facilities and excellent staff
+              make for a brilliantad environment within which to operate. The hotel is meticulous in its planning.
+            </p>
+          </div>
+          <div class="review__blur"></div>
+          <div class="review__figure"></div>
+        </div>
+      </section>
+
+      <section class="download">
+        <div class="wrapper">
+          <div class="download__wrapper">
+            <h2 class="download__title">Download Now Travel Community Apps</h2>
+            <div class="download__links">
+              <a href="https://play.google.com/store" target="_blank">
+                <img src="./img/svg/google.svg" alt="google play" />
+              </a>
+              <a href="https://www.apple.com/ru/app-store/" target="_blank">
+                <img src="./img/svg/apple.svg" alt="apple store" />
+              </a>
             </div>
           </div>
         </div>
       </section>
     </main>
+
+    <footer class="footer">
+      <div class="wrapper">
+        <div class="footer__wrapper">
+          <address class="footer__contacts">
+            <a href="/" class="footer__logo-link">
+              <img src="./img/svg/logo.svg" alt="Company`s logo" class="footer__logo-pic" />
+            </a>
+            <p class="footer__contacts-descr">You can dream, create, design, and buildsa the most wonderful place.</p>
+            <ul class="footer__contacts-list">
+              <li class="footer__contacts-elem"><a href="tel:+0123456987">+0123 456 987</a></li>
+              <li class="footer__contacts-elem"><a href="mailto:yourmailaddress@gmail.com">yourmailaddress@gmail.com</a></li>
+              <li class="footer__contacts-elem"><a href="https://yandex.ru/">www.yourwebsitename.com</a></li>
+            </ul>
+          </address>
+
+          <div class="footer__links">
+            <h4 class="footer__title">Quick Links</h4>
+            <ul class="footer__links-list">
+              <li class="footer__links-elem"><a href="#offer" class="footer__link"> About Us</a></li>
+              <li class="footer__links-elem"><a href="#destin" class="footer__link">Destinations</a></li>
+              <li class="footer__links-elem"><a href="" class="footer__link">Latest Blog</a></li>
+              <li class="footer__links-elem"><a href="" class="footer__link">Our Team</a></li>
+              <li class="footer__links-elem"><a href="" class="footer__link">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__support">
+            <h4 class="footer__title">Support</h4>
+            <ul class="footer__links-list">
+              <li class="footer__links-elem"><a href="#!" class="footer__link"> Customer Support</a></li>
+              <li class="footer__links-elem"><a href="#!" class="footer__link"> Privacy & Policy</a></li>
+              <li class="footer__links-elem"><a href="#!" class="footer__link"> Terms & Condition</a></li>
+              <li class="footer__links-elem"><a href="#!" class="footer__link"> Forum</a></li>
+              <li class="footer__links-elem"><a href="#!" class="footer__link"> Tour Guid</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__news">
+            <h4 class="footer__title">Newsletter</h4>
+            <input type="email" placeholder="Enter your email" class="footer__email">
+            <a href="#!" class="footer__news-subscribe">Subscribe Now</a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
